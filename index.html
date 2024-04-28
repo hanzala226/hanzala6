@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<style>
+    #parent3{
+        display: none;
+    
+    }
+    #more{
+        background-color: orangered;
+        color: white;
+    }
+    .cent{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    #more:hover{
+background-color: transparent;
+color: orangered;
+box-shadow: 0 0 10px orangered;
+    }
+</style>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" id="checkbtn" class="checkbtn"><i class="fa fa-bars"></i></label>
+        <img src="6f4d98e4a5d38f523cf9a55a02adcfb0.png" width="10%" height="80px" alt="">
+<span>PCS College</span>
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Results</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+    </nav>
+    <h2>WELCOME</h2>
+    <div class="parent">
+        <div class="chld1"><img src="1209474.jpg" width="100%" height="100%" alt=""></div>
+        <div class="chld2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni animi soluta culpa officiis enim quod minus exercitationem ullam alias error.</div>
+    </div>
+    <h3>Gallery</h3>
+    <div id="parent2" class="parent2">
+  
+    <div class="chld3"><img src="1.jpg" width="100%" height="100%" alt=""></div>
+    <div class="chld4"><img src="2.jpg" width="100%" height="100%" alt=""></div>
+    <div class="chld5"><img src="3.jpg" width="100%" height="100%" alt=""></div>  </div>
+    <br>
+    <div id="parent2" class="parent2">
+  
+    <div class="chld3"><img src="4.jpg" width="100%" height="100%" alt=""></div>
+    <div class="chld4"><img src="5.jpg" width="100%" height="100%" alt=""></div>
+    <div class="chld5"><img src="6.jpg" width="100%" height="100%" alt=""></div>  </div>
+  
+   <div class="cent" onclick="none()"><button id="more" onclick="more()">more images</button></div> 
+    <br>
+   <div id="parent3"> <div  id="parent2" class="parent2">
+  
+    <div class="chld3"><img src="4.jpg" width="100%" height="100%" alt=""></div>
+    <div class="chld4"><img src="5.jpg" width="100%" height="100%" alt=""></div>
+    <div class="chld5"><img src="6.jpg" width="100%" height="100%" alt=""></div>  </div></div>
+    <br>
+    <div id="rm"  class="rm">
+        <form class="form" action="">
+            <h4>Registration</h4>
+            First Name: <input type="text" class="info" required>
+            <br><br>
+            Second Name: <input type="text" class="info" required>
+            <br><br>
+            Email: <input type="email" class="info" required>
+            <br><br>
+            Password: <input type="password" class="info" required>
+            <br><br>
+            Age: <input type="number" class="age" required>
+            <br><br>
+            Select Gender: <label for="">Male</label><input type="radio" name="gender" required>
+            <label for="">Female</label><input type="radio" name="gender" required>
+            <br><br>
+            <label for="job"> Select Job
+                <Select id="job" required> 
+                    <option value="Principle">Principle</option>
+                    <option value="Sro">Sro</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Other">Other</option>
+                </Select>
+                <br><br>
+             <label for="">Terms and conditions</label><input type="checkbox" required>
+             <br><br>
+             <button type="submit">Submit</button>
+            </label>
+        </form>
+        <div id="map" class="map">
+            <h4>Location</h4><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28960.347215116!2d67.0025359!3d24.8623672!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb315f122fcfcc7%3A0x9aa1583c1b8e3480!2sNayabad%20Hamara%20Lyari%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1714235254075!5m2!1sen!2s" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer>
+       <div id="footer" class="footer"> <h5>Contact:09384792739</h5>
+      
+        <div id="follow" class="follow">
+            <h6>Follow us</h6>
+       <a href=""> <i class='bx bxl-facebook-circle'></i></a>
+       <a href=""> <i class='bx bxl-youtube' ></i></a>
+       <a href=""> <i class='bx bxl-instagram' ></i></a>
+       <a href=""><i class='bx bxl-twitter' ></i></a></div>
+       <h5>Email:pcs@gmail.com</h5>
+       </div>
+      
+    </footer>
+    <script>
+        function more(){document.getElementById("parent3").style.display="block"}
+        function none(){document.getElementById("more").style.display="none"}
+    </script>
+</body>
+</html>
